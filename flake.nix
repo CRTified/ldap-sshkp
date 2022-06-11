@@ -34,6 +34,8 @@
             haskellPackages.haskell-language-server # you must build it with your ghc to work
             ghcid
             cabal-install
+            stack
+            haskellPackages.ormolu
           ];
           inputsFrom = builtins.attrValues self.packages.${system};
         };

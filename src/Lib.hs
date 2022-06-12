@@ -49,8 +49,8 @@ ldapsshkp =
       bindDn = Nothing &= help "DN used to bind against LDAP",
       bindPass = Nothing &= help "Password used for binding",
       baseDn = "" &= help "DN used as base for searching" &= groupname "Search Settings",
-      searchAttr = "uid" &= help "Attribute for matching",
-      valueAttr = "sshPublicKey" &= help "Attribute containing public keys",
+      searchAttr = "uid" &= help "Attribute for matching (Default: uid)",
+      valueAttr = "sshPublicKey" &= help "Attribute containing public keys (Default: sshPublicKey)",
       target = Nothing &= argPos 0 &= typ "USER",
       searchScope =
         CA.enum
